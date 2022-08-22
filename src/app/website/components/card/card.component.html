@@ -1,0 +1,11 @@
+<div>
+    <a [routerLink]="['/character', result.id]">
+        <app-img [img]="result.image" ></app-img>
+    </a>
+    <h2>{{result.name}}</h2>
+    <p> Gender: <span [ngClass]="{
+        'female': result.gender === 'Female', 
+        'male': result.gender === 'Male', 
+        'unknown': result.gender === 'unknown'
+    }">{{result.gender}}</span> </p>
+</div>

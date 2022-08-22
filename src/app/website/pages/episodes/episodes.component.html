@@ -1,0 +1,9 @@
+<div>
+    <ol>
+        <li *ngFor="let episode of episodes" >
+            <a [routerLink]="['/episode', episode.id]"> {{episode.name}} </a>
+            
+        </li>
+    </ol>
+    <button [disabled]="page == 3"  (click)="loadMore()" > More </button>
+</div>

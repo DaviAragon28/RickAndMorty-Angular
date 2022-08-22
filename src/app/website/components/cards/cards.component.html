@@ -1,0 +1,5 @@
+<div class="card--grid">
+    <app-card [result]="card" *ngFor="let card of results" ></app-card>
+    <button class="toTop" (click)="toTop()">Up</button>
+</div>
+<button class="load--more" (click)="loadMore()" [disabled]="page === 42">More</button>

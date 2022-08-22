@@ -1,0 +1,49 @@
+div {
+    padding: 3vw 30px;
+    ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            place-content: center;
+            
+        
+        li {
+            // list-style: none;
+            a {
+                color: white;
+                text-decoration: none;
+                &:hover {
+                    color: yellowgreen;
+                }
+            }
+        }
+    }
+    button {
+        display: block;
+        margin: 50px auto;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        &:disabled {
+            color: yellowgreen;
+            border: 1px solid yellowgreen;
+        }
+
+    }
+}
+
+
+@media (max-width: 1024px) {
+    div {
+        padding: 25vw 30px;
+        ul {
+            display: flex;
+        flex-direction: column;
+        gap: 10px;
+            
+        }
+    }
+}

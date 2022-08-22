@@ -1,0 +1,14 @@
+<div>
+    <div class="detail" *ngIf="location">
+        <a routerLink="/home">
+            <img src="https://raw.githubusercontent.com/bismarckaragon/rickandmorty/7aa94b0e71506cbd9c15c6c1f1b9bced33d87d1f/src/assets/logo.svg" alt="logo rick & morty"/>
+        </a>
+        <div class="info">
+            <h2>{{location.name}}</h2>
+            <p>Dimension: {{location.dimension}}</p>
+            <p>Type: {{location.type}}</p>
+            <p>Created: {{location.created}}</p>
+        </div>
+        <h3>Extra info about locations</h3>
+    </div>
+</div>

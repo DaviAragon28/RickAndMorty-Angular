@@ -1,0 +1,13 @@
+<div>
+    <div class="detail" *ngIf="episode">
+        <a routerLink="/home">
+            <img src="https://raw.githubusercontent.com/bismarckaragon/rickandmorty/7aa94b0e71506cbd9c15c6c1f1b9bced33d87d1f/src/assets/logo.svg" alt="logo rick & morty"/>
+        </a>
+        <div class="info">
+            <h2>{{episode.name}}</h2>
+            <p>Air Date: {{episode.air_date}}</p>
+            <p>Episode: {{episode.episode}}</p>
+        </div>
+        <h3>Extra info about episodes</h3>
+    </div>
+</div>

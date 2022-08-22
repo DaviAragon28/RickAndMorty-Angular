@@ -1,0 +1,8 @@
+<div>
+    <ul>
+        <li *ngFor="let location of locations" >
+            <a [routerLink]="['/location', location.id]"> {{location.name}} </a>
+        </li>
+    </ul>
+    <button [disabled]="page == 7"  (click)="loadMore()" > More </button>
+</div>
